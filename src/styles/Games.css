@@ -1,0 +1,30 @@
+.games-page {
+  height: 100vh;
+  background-color: green;
+}
+
+/* --- GAMERTAG --- */
+
+.gamertag {
+  border-radius: 7px;
+  background-color: #fff;
+  display: flex;
+  gap: 10px;
+  text-align: left;
+}
+
+.gt-image {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.gt-info {
+  color: #000;
+  font-size: 18px;
+}

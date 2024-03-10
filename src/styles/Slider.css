@@ -1,0 +1,21 @@
+.slide-wrapper {
+  display: flex;
+  position: relative;
+  right: 0;
+  transition: 0.5s ease;
+}
+
+.slide-window {
+  display: flex;
+  overflow: hidden;
+  border: 1px solid;
+}
+
+.simple-slide {
+  width: 1835px;
+  height: 100vh;
+}
+
+.main-slider {
+  display: flex;
+}
