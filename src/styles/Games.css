@@ -1,30 +1,125 @@
 .games-page {
   height: 100vh;
-  background-color: green;
+  padding: 50px;
+}
+
+.db-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(farthest-side, #48a83e, #4ddb34, #2c6a2c);
+  z-index: -1; /* Place the cover behind the content */
+}
+
+/* --- DASHBOARD MENU --- */
+
+.db-topmenu {
+  display: flex;
+  flex-direction: row;
+  gap: 20em;
+}
+
+.db-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.db-menu-options {
+  display: flex;
+  flex-direction: column;
 }
 
 /* --- GAMERTAG --- */
 
 .gamertag {
-  border-radius: 7px;
-  background-color: #fff;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
   text-align: left;
+  border: 2px solid #2d2d2d;
+  border-radius: 10px;
+  width: 600px;
+  height: 200px;
+  box-shadow: inset 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0)
+  );
+  transition: all 0.3s ease-in-out;
+}
+
+.gamertag:hover {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.gt-header {
+  border-radius: 7px 7px 0 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  font-size: 2.5em;
+}
+
+.gt-header-tag {
+  padding-left: 20px;
+  filter: drop-shadow(2px 1px 2px rgba(255, 255, 255, 0.5));
+  letter-spacing: 0.1rem;
+}
+
+.gt-body {
+  display: flex;
+  flex-direction: row;
 }
 
 .gt-image {
-  width: 60px;
-  height: 60px;
-  padding: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  outline: 1px solid black;
+  box-shadow: inset 0 0 10px 5px rgba(255, 255, 255, 0.5);
 }
 
-.user-info {
+.gt-info {
   display: flex;
   flex-direction: column;
 }
 
-.gt-info {
+.gt-info-tag {
   color: #000;
-  font-size: 18px;
+  font-size: 1.85em;
+  letter-spacing: 0.05rem;
+}
+
+.db-button {
+  font-size: 2em;
+  letter-spacing: 0.2rem;
+  background: rgba(0, 0, 0, 0);
+}
+
+.db-button:hover {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.xbox-logo {
+  width: 300px;
+  filter: drop-shadow(2px 3px 4px black);
+}
+
+.xbox-controller-button {
+  width: 45px;
 }

@@ -62,13 +62,17 @@ export function Slider(props) {
 
   return (
     <div className="main-slider">
-      <button onClick={leftClick}>Left</button>
+      <button className="slide-button" onClick={leftClick}>
+        <span className="slide-button-span">marketplace</span>
+      </button>
       <div className="slide-window" ref={slideWindowRef}>
         <div className="slide-wrapper" ref={wrapperRef}>
           <Slide ref={slideRef}>{props.children}</Slide>
         </div>
       </div>
-      <button onClick={rightClick}>Right</button>
+      <button className="slide-button" onClick={rightClick}>
+        <span className="slide-button-span">xgames</span>
+      </button>
     </div>
   );
 }

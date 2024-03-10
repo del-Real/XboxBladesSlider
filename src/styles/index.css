@@ -1,9 +1,11 @@
+* {
+  font-family: Convection Medium, Segoe UI, SegoeUI, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+}
+
 :root {
-  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.87);
-  background-color: #ffffff;
 }
 
 body {
@@ -12,9 +14,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: linear-gradient(to left, #ddd, #b0b0b0);
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #fff;
+  font-weight: 100;
 }

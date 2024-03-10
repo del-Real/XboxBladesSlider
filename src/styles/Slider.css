@@ -12,10 +12,22 @@
 }
 
 .simple-slide {
-  width: 1835px;
+  width: 1500px;
   height: 100vh;
 }
 
 .main-slider {
   display: flex;
+}
+
+.slide-button {
+}
+
+.slide-button-span {
+  display: inline-block;
+  transform: rotate(90deg);
+  font-size: 3em;
+  letter-spacing: 0.2rem;
+  width: 5rem;
+  color: #393939;
 }
