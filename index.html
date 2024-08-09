@@ -1,14 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Xbox360_favicon.svg" />
-    <link href="https://fonts.cdnfonts.com/css/convection" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xbox 360 Blades Dashboard</title>
+    <title>Xbox Blades Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Dashboard-->
+    <div class="dashboard">
+      <!-- Left Buttons -->
+      <div class="left-slider-buttons">
+        <button class="slider-button" id="marketplace-button">
+          <span class="button-label">marketplace</span>
+        </button>
+        <button class="slider-button" id="xbox-live-button">
+          <span class="button-label">xbox live</span>
+        </button>
+        <button class="slider-button" id="games-button">
+          <span class="button-label">games</span>
+        </button>
+      </div>
+
+      <!-- Slider -->
+      <div class="slider-wrapper" id="slider-wrapper">
+        <div class="slide" style="background-color: red">
+          <h1 style="color: #ffffff">1-MARKETPLACE</h1>
+        </div>
+        <div class="slide" style="background-color: orange">
+          <h1 style="color: #ffffff">2-XBOXLIVE</h1>
+        </div>
+        <div class="slide" style="background-color: green">
+          <h1 style="color: #ffffff">3-GAMES</h1>
+        </div>
+        <div class="slide" style="background-color: blue">
+          <h1 style="color: #ffffff">4-MEDIA</h1>
+        </div>
+        <div class="slide" style="background-color: purple">
+          <h1 style="color: #ffffff">5-SYSTEM</h1>
+        </div>
+      </div>
+
+      <!-- Right Buttons -->
+      <div class="right-slider-buttons">
+        <button class="slider-button" id="media-button">
+          <span class="button-label">media</span>
+        </button>
+        <button class="slider-button" id="system-button">
+          <span class="button-label">system</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
