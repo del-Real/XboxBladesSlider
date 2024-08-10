@@ -39,6 +39,6 @@ function moveButtons(index) {
 
 // Move slide
 function switchSlide(newIndex) {
-  const slideWidth = slide.clientWidth;
+  const slideWidth = slide.offsetWidth;
   sliderWrapper.scrollLeft += slideWidth * newIndex;
 }

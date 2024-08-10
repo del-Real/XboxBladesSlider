@@ -30,26 +30,32 @@ h1 {
   position: relative;
   display: flex;
   margin: 0 auto;
+  justify-content: center;
 }
 
+/* Slider  */
 .slider-wrapper {
-  height: 100vh;
-  width: 100%;
   display: flex;
   overflow: scroll;
   scroll-behavior: smooth;
   list-style: none;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  width: 0%;
+  animation: expand-width 2.5s forwards;
 }
 
-.slide {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  flex: 1 0 100%;
+@keyframes expand-width {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
+/* Slider buttons */
 .left-slider-buttons {
   display: flex;
 }
@@ -67,6 +73,7 @@ h1 {
   width: 5rem;
   height: 100vh;
   padding-top: 175px;
+  border-radius: 0;
 }
 
 .button-label {
@@ -76,4 +83,33 @@ h1 {
   height: 0;
   line-height: 0;
   white-space: nowrap;
+}
+
+/* Slides */
+.slide {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+  min-width: 2000px;
+}
+
+#marketplace-slide {
+  background-color: #f15122;
+}
+
+#xboxlive-slide {
+  background-color: #ffb737;
+}
+
+#games-slide {
+  background-color: #339326;
+}
+
+#media-slide {
+  background-color: #40a3ff;
+}
+
+#system-slide {
+  background-color: #756ac6;
 }

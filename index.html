@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Dashboard-->
+    <!-- DASHBOARD -->
     <div class="dashboard">
       <!-- Left Buttons -->
       <div class="left-slider-buttons">
         <button class="slider-button" id="marketplace-button">
           <span class="button-label">marketplace</span>
         </button>
-        <button class="slider-button" id="xbox-live-button">
+        <button class="slider-button" id="xboxlive-button">
           <span class="button-label">xbox live</span>
         </button>
         <button class="slider-button" id="games-button">
@@ -23,19 +23,36 @@
 
       <!-- Slider -->
       <div class="slider-wrapper" id="slider-wrapper">
-        <div class="slide" style="background-color: red">
+        <!-- Marketplace slide -->
+        <div class="slide" id="marketplace-slide">
           <h1 style="color: #ffffff">1-MARKETPLACE</h1>
         </div>
-        <div class="slide" style="background-color: orange">
+        <!-- Xbox Live slide -->
+        <div class="slide" id="xboxlive-slide">
           <h1 style="color: #ffffff">2-XBOXLIVE</h1>
         </div>
-        <div class="slide" style="background-color: green">
+        <!-- Games slide -->
+        <div class="slide" id="games-slide">
           <h1 style="color: #ffffff">3-GAMES</h1>
+
+          <svg
+            width="1000"
+            height="84"
+            viewBox="0 0 700 84"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0 h700 v30 h-280 c-60,0 -60,15 -100,30 c-10,4 -15,5 -35,6 h-285"
+              fill="#008882"
+            />
+          </svg>
         </div>
-        <div class="slide" style="background-color: blue">
+        <!-- Media slide -->
+        <div class="slide" id="media-slide">
           <h1 style="color: #ffffff">4-MEDIA</h1>
         </div>
-        <div class="slide" style="background-color: purple">
+        <!-- System slide -->
+        <div class="slide" id="system-slide">
           <h1 style="color: #ffffff">5-SYSTEM</h1>
         </div>
       </div>
