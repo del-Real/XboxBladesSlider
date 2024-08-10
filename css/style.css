@@ -55,6 +55,35 @@ h1 {
   }
 }
 
+/* Slides */
+.slide {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+  min-width: 70vw;
+}
+
+#marketplace-slide {
+  background-color: #f15122;
+}
+
+#xboxlive-slide {
+  background-color: #ffb737;
+}
+
+#games-slide {
+  background: radial-gradient(farthest-side, #48a83e, #4ddb34, #2c6a2c);
+}
+
+#media-slide {
+  background-color: #40a3ff;
+}
+
+#system-slide {
+  background-color: #756ac6;
+}
+
 /* Slider buttons */
 .left-slider-buttons {
   display: flex;
@@ -83,33 +112,4 @@ h1 {
   height: 0;
   line-height: 0;
   white-space: nowrap;
-}
-
-/* Slides */
-.slide {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  flex: 1 0 100%;
-  min-width: 2000px;
-}
-
-#marketplace-slide {
-  background-color: #f15122;
-}
-
-#xboxlive-slide {
-  background-color: #ffb737;
-}
-
-#games-slide {
-  background-color: #339326;
-}
-
-#media-slide {
-  background-color: #40a3ff;
-}
-
-#system-slide {
-  background-color: #756ac6;
 }
