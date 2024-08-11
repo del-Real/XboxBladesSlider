@@ -62,26 +62,27 @@ h1 {
   height: 100%;
   flex: 1 0 100%;
   min-width: 70vw;
+  padding: 30px;
 }
 
 #marketplace-slide {
-  background-color: #f15122;
+  background: radial-gradient(farthest-side, #ff8431, #fea636, #ff6136);
 }
 
 #xboxlive-slide {
-  background-color: #ffb737;
+  background: radial-gradient(farthest-side, #ffb737, #ffd145, #ff9b29);
 }
 
 #games-slide {
-  background: radial-gradient(farthest-side, #48a83e, #4ddb34, #2c6a2c);
+  background: radial-gradient(farthest-side, #48a83e, #60f044, #2f9a21);
 }
 
 #media-slide {
-  background-color: #40a3ff;
+  background: radial-gradient(farthest-side, #40a3ff, #60baff, #2881ff);
 }
 
 #system-slide {
-  background-color: #756ac6;
+  background: radial-gradient(farthest-side, #a28dff, #b0a4f2, #7a6ade);
 }
 
 /* Slider buttons */
