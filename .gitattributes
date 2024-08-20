@@ -1,2 +1,15 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Force JavaScript to be considered as the primary language
+*.js linguist-detectable=true
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+
+# Optionally, you can include other languages as detectable
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+
+# Make sure to include other languages for proper statistics
+*.html linguist-detectable=true
+*.css linguist-detectable=true
